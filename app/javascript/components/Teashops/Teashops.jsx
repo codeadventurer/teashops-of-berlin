@@ -2,11 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import TeashopCard from "./TeashopCard";
 import styled from "styled-components";
-
-const Header = styled.h1`
-  font-size: 1.5rem;
-  text-align: center;
-`;
+import Heading from "../primitives/Heading";
 
 const Grid = styled.ul`
   display: grid;
@@ -32,7 +28,7 @@ export default function Teashops() {
 
   return (
     <div>
-      <Header>Teashops of Berlin</Header>
+      <Heading>Teashops of Berlin</Heading>
       <Grid>{grid}</Grid>
     </div>
   );
