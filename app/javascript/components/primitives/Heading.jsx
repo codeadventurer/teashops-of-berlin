@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledHeading = styled.h1`
-  font-family: Helvetica;
-  font-size: 2rem;
+  font-family: ${(props) => props.theme.fonts.heading};
+  font-size: ${(props) => props.theme.fontSizes.xl};
   text-align: center;
 `;
 
